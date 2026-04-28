@@ -20,5 +20,23 @@ EventFlow is a full-stack MERN application that allows users to seamlessly brows
 - **Sleek UI/UX**: Built entirely with React, Tailwind CSS, and polished with micro-interactions.
 
 ---
+## 🚀 Setup Instructions
 
+### Prerequisites
+Make sure you have [Node.js](https://nodejs.org/) installed on your machine.
+You will also need a MongoDB database (e.g., [MongoDB Atlas Free Tier](https://www.mongodb.com/cloud/atlas/register)).
+
+### 1. Environment Variables Configuration
+Navigate to `server/.env` and fill in the necessary keys:
+```env
+MONGO_URI=your_mongodb_connection_string
+JWT_SECRET=supersecretjwtkey_eventflow
+EMAIL_USER=your_gmail_address
+EMAIL_PASS=your_gmail_app_password
+PORT=5000
+```
+> **Note**: For `EMAIL_PASS`, you need to generate an "App Password" from your Google Account settings, standard passwords won't work due to 2FA.
+
+```
+*(Client will run on a local port provided by Vite, typically `http://localhost:5173`)*
 
